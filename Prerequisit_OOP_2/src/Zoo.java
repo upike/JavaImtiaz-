@@ -11,7 +11,7 @@ public class Zoo {
 		fish1.swim();
 		
 		Bird bird1=new Bird(12, "Male", 1 );
-		bird1.fly();
+		//bird1.fly();
 		bird1.eat(); // after extending class Bird from Animals we can use Methods from Animals class's  like e.g. eat(); 
 		bird1.sleep(); 
 	//	animal1.fly();   // we can not use method from child to parent class object - The parents should not be able to inherit from the child. 
@@ -22,6 +22,10 @@ public class Zoo {
 		// we made Bird extend the animal class because a bird is an animal.
 		// And if we didn't have the ability to extend animal we;d have to copy over the method. 
 		// For example in the bird in the Animal class we'd have to copy over these two methods into the bird class.  
+	Chicken chicken1=new Chicken(12, "kogut", 13);
+//	chicken1.fly();
+	chicken1.eat();
+	
 	}
 
 }
