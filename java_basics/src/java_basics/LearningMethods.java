@@ -21,7 +21,7 @@ public class LearningMethods {
 		myUtilsInstance.add100(3);
 		
 		myUtilsInstance.printSomeJunk("string"); // wywolanie statycznej metody na objekcie klasy
-		MyUtils.add100(1);                       // wywo³anie niestatycznej kalsy w sposób statyczny
+		// MyUtils.add100(1);                       // wywo³anie niestatycznej kalsy w sposób statyczny
 	}
 
 	// applicable - odpowiedni the reason for that is of course the argument that is accepts is supposed to be of type string and we are passing in an integer 
