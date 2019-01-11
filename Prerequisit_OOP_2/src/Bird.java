@@ -5,6 +5,12 @@ public class Bird extends Animal {
 		
 	}
 
+
+	public void move() {
+		System.out.println("Bird is flying...");
+		
+	}
+
 	/*
 	 * public void fly() { System.out.println("Flying.."); } // insted of this method here we create an Interface to solve the problem that not all birds can fly.
 	 */

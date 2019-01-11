@@ -19,3 +19,4 @@ public void fly() {
 // Now a key thing to remember is a class can only extend one class one other class. Only One! 
 // So it can only have one parent and that makes sense. 
 // Any class cannot have multiple parents but it can have as many interfaces as it wants. 
+
