@@ -2,9 +2,16 @@ package car_dealership;
 
 public class Vehicle {
 
+	public Vehicle(String make, String model, double price) {
+		this.make = make;
+		this.model = model;
+		this.price = price;
+	}
+	
+	
 	private String make;
+	
 	private String model;
-	private String color;
 	private double price;
 	
 	public void setMake(String make) {
@@ -19,12 +26,6 @@ public class Vehicle {
 	}
 	public String getModel() {
 		return model;
-	}
-	public void setColor(String color) {
-		this.color=color;
-	}
-	public String getColor() {
-		return color;
 	}
 	public void setPrice(double price) {
 		this.price=price;
