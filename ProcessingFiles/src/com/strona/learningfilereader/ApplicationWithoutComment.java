@@ -13,32 +13,29 @@ public class ApplicationWithoutComment {
 	public static void main(String[] args) {
 
 		File file = new File("myfile.txt");
-		BufferedReader bufferedReader=null;
-		try {
-			FileReader fileReader = new FileReader(file);
-			bufferedReader = new BufferedReader(fileReader);
+
+		try (FileReader fileReader = new FileReader(file);
+				BufferedReader bufferedReader = new BufferedReader(fileReader);) {
+
 			String line = bufferedReader.readLine();
-		
+
 			while (line != null) {
-			System.out.println(line);
-			line=bufferedReader.readLine();
+				System.out.println(line);
+				line = bufferedReader.readLine();
 			}
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found");
 		} catch (IOException e) {
 			System.out.println("Problem reading the file" + file.getName());
 		} catch (NullPointerException ex) {
-			System.out.println("file was probably never opened" +ex);
+			System.out.println("file was probably never opened" + ex);
 		}
 		
-		finally {
-			try {
-				bufferedReader.close();
-			} catch (IOException e) {
-			System.out.println("unable to close file "+ file.getName());
-			}
-		}
 
 	}
 
 }
+
+//So the new syntax that was introduced in Java 7 try with resources makes the Java code less verbose.
+// verbose -rozwlek³y
+// Onwards -dalej naprzód
